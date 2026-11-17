@@ -45,7 +45,7 @@ button {
 }
 #index-header{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     background-image: url(../images/BanffMountains.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -53,10 +53,14 @@ button {
     gap: 50px;
     padding: 30px;
     padding-right: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100%;
+    column-gap: 100px;
 }
 .index-header-box{
     width: 100%;
-    background-color: rgb(190 211 195 / 50%);
+    background-color: rgb(190 211 195 / 75%);
     border-radius: 20px;
     padding : 10px;
     text-align: center;
@@ -74,4 +78,11 @@ header h1, h2 {
 #index-header h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
+}
+#index-header-box-text {
+    grid-column: 2;
+}
+#index-header-box-image {
+    grid-column: 3;
+    max-width: 300px;
 }
