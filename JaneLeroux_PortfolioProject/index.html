@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav id="main-nav">
-        <p>☰</p>
+        <button>☰</button>
         <h2>Navigation</h2>
         <ul>
             <li><a href="#">About</a></li>
@@ -24,7 +24,7 @@
         <div class="index-header-box" id="index-header-box-text">
             <h1>Jane Leroux</h1>
             <h2>Computer Programming Student</h2>
-            <p>Hello, I am Jane Leroux, and I am a 22 year-old student at College LaSalle, Montreal.</p>
+            <p>I am a 22 year-old student at College LaSalle, located in Montreal. I am a fast-learner who loves solving logic-centered problems.</p>
             <button>Contact Me</button>
         </div>
         <div class="index-header-box" id="index-header-box-image">
@@ -33,28 +33,35 @@
     </header>
 
     <main id="index-main">
-        <h2 id="welcome">Welcome to My Portfolio</h2>
-
-        <h3 id="index-skills">My Technical Skills</h3>
-        <div>
-            <p>HTML, CSS, JavaScript</p>
-            <p>C++</p>
-            <p>C#</p>
+        <div id="welcome">
+            <h2>Welcome!</h2>
+            <p>Hello! I am Jane Leroux and welcome to my portfolio!</p>
+            <button>About Me</button>
         </div>
 
-        <h3 id="index-projects">My Latest Projects</h3>
-        <div>
-            <div>
-                <h4>Project 1</h4>
+        <div id="index-skills">
+            <h3>Overview of my Technical Skills</h3>
+            <div id="index-skills-list">
+                <p class="index-skills-box">HTML, CSS, JavaScript</p>
+                <p class="index-skills-box">C++</p>
+                <p class="index-skills-box">C#</p>
             </div>
-            <div>
-                <h4>Project 2</h4>
-            </div>
-            <div>
-                <h4>Project 3</h4>
-            </div>
-            <div>
-                <button>Go To Projects</button>
+            <button>My Skills</button>
+        </div>
+        
+        <div id="index-projects">
+            <h3>My Latest Projects</h3>
+            <div id="index-projects-list">
+                <div class="index-projects-box">
+                    <h4>Project 1</h4>
+                </div>
+                <div class="index-projects-box">
+                    <h4>Project 2</h4>
+                </div>
+                <div class="index-projects-box">
+                    <h4>Project 3</h4>
+                </div>
+                <button>My Projects</button>
             </div>
         </div>
     </main>
