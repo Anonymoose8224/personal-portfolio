@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav id="main-nav">
+        <p>☰</p>
         <h2>Navigation</h2>
-        <a href="#">To Projects</a>
-        <a href="#">To Contact</a>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <ul>
+                <li id="main-nav-game"><a href="#">Game</a></li>
+            </ul>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-    <header>
-        <h1>Jane Leroux</h1>
-        <h2>Computer Programming Student</h2>
-        <p>I am a student at LaSalle College.</p>
+    <header id="index-header">
+        <div class="index-header-box">
+            <h1>Jane Leroux</h1>
+            <h2>Computer Programming Student</h2>
+            <p>Hello, I am Jane Leroux, and I am a 22 year-old student at College LaSalle, Montreal.</p>
+            <button>Contact Me</button>
+        </div>
+        <div class="index-header-box">
+            <img src="#" alt="Portfolio Picture">
+        </div>
     </header>
 
-    <main>
-        <h2>Welcome to My Portfolio</h2>
+    <main id="index-main">
+        <h2 id="welcome">Welcome to My Portfolio</h2>
 
-        <h3>My Technical Skills</h3>
+        <h3 id="index-skills">My Technical Skills</h3>
         <div>
             <p>HTML, CSS, JavaScript</p>
             <p>C++</p>
             <p>C#</p>
         </div>
 
-        <h3>My Latest Projects</h3>
+        <h3 id="index-projects">My Latest Projects</h3>
         <div>
             <div>
                 <h4>Project 1</h4>
@@ -37,6 +52,9 @@
             </div>
             <div>
                 <h4>Project 3</h4>
+            </div>
+            <div>
+                <button>Go To Projects</button>
             </div>
         </div>
     </main>

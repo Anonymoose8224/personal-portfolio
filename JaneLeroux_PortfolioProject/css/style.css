@@ -1,0 +1,76 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    font-weight: bold;
+    font-size: 18px;
+}
+button {
+    background-color: #4a919e;
+    padding: 10px;
+    color: #212e53;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+}
+#main-nav {
+    background-color: #efc8c8;
+    color: #a68bbd;
+    padding: 30px;
+}
+#main-nav p {
+    color: #917e96;
+    font-size: 30px;
+}
+#main-nav a {
+    gap: 25px;
+    text-decoration: none;
+}
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#main-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#main-nav-game {
+    margin-left: 15px;
+}
+#index-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: url(images/BanffMountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 50px;
+    padding: 30px;
+    min-height: 300px;
+    margin-right: 50px;
+}
+.index-header-box{
+    width: 100%;
+    background-color: rgb(190 211 195 / 50%);
+    border-radius: 20px;
+    margin: 20px;
+    padding : 10px;
+    text-align: center;
+}
+.index-header-box p {
+    padding: 10px;
+}
+header p {
+    color: #4a919e;
+}
+header h1, h2 {
+    color: #212e53;
+}
+#index-header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
