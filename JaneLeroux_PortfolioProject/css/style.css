@@ -1,14 +1,69 @@
+/*
+DEFINING COLORS
+*/
+:root {
+    --bg-color: #e8d8de;
+    --button-menu-bg: #ea958e;
+    --nav-panel-color: #efc8c8;
+    --nav-text-color: #212e53;
+    --nav-text-hover-color: #917e96;
+    --menu-button-color: #212e53;
+    --button-bg-color: #4a919e;
+    --button-text-color: #212e53;
+    --button-hover-color: #97b4be;
+    --header-text-color: #4a919e;
+    --header-header-text-color: #212e53;
+    --body-bg-color: #e8d8de;
+    --index-header-box-color: rgb(190 211 195 / 75%);
+    --index-box-text-color: #212e53;
+    --title-bg-color: #ff9a40;
+    --title-header-color: #382032;
+    --title-text-color: #382032;
+    --section-header-bg: #ea958e;
+    --section-header-text: #382032;
+    --section-box-bg: #ffc2a3;
+    --section-box-text: #382032;
+    --light-background: url(../images/BanffMountains.jpg);
+}
+body.dark-mode {
+    --bg-color: #1b3a69;
+    --button-menu-bg: #2a4b65;
+    --nav-panel-color: #93478a;
+    --nav-text-color: #f78169;
+    --nav-text-hover-color: #d3597e;
+    --menu-button-color: #d3597e;
+    --button-bg-color: #6e5579;
+    --button-text-color: #d49494;
+    --button-hover-color: #9c6d83;
+    --header-text-color: #dec1b6;
+    --header-header-text-color: #dec1b6;
+    --body-bg-color: #1b3a69;
+    --index-header-box-color: rgb(213 139 123 / 75%);
+    --index-box-text-color: #dec1b6;
+    --title-bg-color: #6e7193;
+    --title-header-color: #dec1b6;
+    --title-text-color: #dec1b6;
+    --section-header-bg: #2a4b65;
+    --section-header-text: #f3b8c0;
+    --section-box-bg: #31747e;
+    --section-box-text: #dec1b6;
+    --light-background: url(../images/DuskMountains.jpg)
+}
+
+
+
 *{
     font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 p {
     font-weight: bold;
     font-size: 20px;
 }
 button {
-    background-color: #4a919e;
+    background-color: var(--button-bg-color);
     padding: 10px;
-    color: #212e53;
+    color: var(--button-text-color);
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px;
@@ -19,35 +74,44 @@ button {
 }
 button:hover {
     cursor: pointer;
-    background-color: #97b4be;
+    background-color: var(--button-hover-color);
 }
 header p {
-    color: #4a919e;
+    color: var(--header-text-color);
 }
 header h1, h2 {
-    color: #212e53;
+    color: var(--header-header-text-color);
 }
 body {
-    background-color: #e8d8de;
+    background-color: var(--body-bg-color);
     margin: 0;
     padding: 0;
 }
 
 
+#button-menu {
+    background-color: var(--button-bg-color);
+}
+#button-menu button {
+    background-color: transparent;
+    color: var(--menu-button-color);
+    font-size: 30px;
+}
+
 
 #main-nav {
-    background-color: #efc8c8;
+    background-color: var(--nav-panel-color);
     padding: 30px;
 }
 #main-nav a {
     gap: 25px;
-    color: #212e53;
+    color: var(--nav-text-color);
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
 }
 #main-nav a:hover {
-    color: #917e96;
+    color: var(--nav-text-hover-color);
 }
 #main-nav ul {
     list-style-type: none;
@@ -65,11 +129,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
-#main-nav button {
-    background-color: transparent;
-    color: #917e96;
-    font-size: 30px;
-}
 #back-button {
     display: flex;
     justify-content: center;
@@ -82,7 +141,7 @@ body {
 #index-header{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr;
-    background-image: url(../images/BanffMountains.jpg);
+    background-image: var(--light-background);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -97,14 +156,14 @@ body {
 }
 .index-header-box{
     width: 100%;
-    background-color: rgb(190 211 195 / 75%);
+    background-color: var(--index-header-box-color);
     border-radius: 20px;
     padding : 10px;
     text-align: center;
 }
 .index-header-box p {
     padding: 10px;
-    color: #212e53;
+    color: var(--index-box-text-color);
 }
 #index-header h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -127,7 +186,7 @@ body {
 }
 
 #title {
-    background-color: #ff9a40;
+    background-color: var(--title-bg-color);
     text-align: center;
     padding: 50px;
 }
@@ -135,10 +194,10 @@ body {
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline;
-    color: #382032;
+    color: var(--title-header-color);
 }
 #title p {
-    color: #382032;
+    color: var(--title-text-color);
     font-size: 20px;
 }
 
@@ -150,8 +209,8 @@ body {
 .section-3-boxes h2 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ea958e;
-    color: #382032;
+    background-color: var(--section-header-bg);
+    color: var(--section-header-text);
     padding: 50px;
     border-radius: 10px;
     grid-column: span 3;
@@ -173,12 +232,12 @@ body {
     justify-content: center;
 }
 .section-3-boxes-box {
-    background-color: #ffc2a3;
+    background-color: var(--section-box-bg);
     text-align: center;
     font-size: 40px;
     padding: 40px 20px;
     border-radius: 10px;
-    color: #382032;
+    color: var(--section-box-text);
 }
 
 .section-4-boxes {
@@ -189,8 +248,8 @@ body {
 .section-4-boxes h2 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ea958e;
-    color: #382032;
+    background-color: var(--section-header-bg);
+    color: var(--section-header-text);
     padding: 50px;
     border-radius: 10px;
     grid-column: span 4;
@@ -212,12 +271,12 @@ body {
     justify-content: center;
 }
 .section-4-boxes-box {
-    background-color: #ffc2a3;
+    background-color: var(--section-box-bg);
     text-align: center;
     font-size: 40px;
     padding: 40px 20px;
     border-radius: 10px;
-    color: #382032;
+    color: var(--section-box-text);
 }
 
 .section-images {
@@ -232,8 +291,8 @@ body {
 .section-1-boxes h2 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ea958e;
-    color: #382032;
+    background-color: var(--section-header-bg);
+    color: var(--section-header-text);
     padding: 50px;
     border-radius: 10px;
 }
@@ -253,12 +312,12 @@ body {
     justify-content: center;
 }
 .section-1-boxes-box {
-    background-color: #ffc2a3;
+    background-color: var(--section-box-bg);
     text-align: center;
     font-size: 40px;
     padding: 40px 20px;
     border-radius: 10px;
-    color: #382032;
+    color: var(--section-box-text);
 }
 .section-1-boxes-list ul {
     list-style-type: none;
