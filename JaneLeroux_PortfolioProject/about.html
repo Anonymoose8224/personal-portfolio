@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -13,41 +14,41 @@
         <button>☰</button>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="#">Main Menu</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Main Menu</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <ul>
-                <li id="main-nav-game"><a href="#">Game</a></li>
+                <li id="main-nav-game"><a href="game.html">Game</a></li>
             </ul>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <header id="about-header">
+    <header id="title">
         <h1>My About Page</h1>
     </header>
 
-    <main>
-        <div id="about-introduction">
+    <main id="main">
+        <div class="section-4-boxes">
             <h2>Introduction</h2>
-            <div id="about-introduction-list">
-                <div class="about-introduction-box">
+            <div class="section-4-boxes-list">
+                <div class="section-4-boxes-box">
                     <h3>Who I am</h3>
                     <p>My name is Jane Leroux, and I am a 22-year old student at LaSalle College. I reside in Montreal,
                         Canada.</p>
                 </div>
-                <div class="about-introduction-box">
+                <div class="section-4-boxes-box">
                     <h3>My Working Experience</h3>
                     <p>I have experience as a hardware store clerk, where I have helped many people solve issues with
                         their home. I have been trained in the paint department, where I got the skills to differentiate
                         very similar colours and create colour palettes.</p>
                 </div>
-                <div class="about-introduction-box">
+                <div class="section-4-boxes-box">
                     <h3>My Studies</h3>
                     <p>I study Video Game Programming at LaSalle College. I have an affinity for databases, web
                         applications, and solving logical problems.</p>
                 </div>
-                <div class="about-introduction-box">
+                <div class="section-4-boxes-box">
                     <h3>My Interests</h3>
                     <p>I have an interest in cybersecurity, databases, colour palettes, and fiber arts, such as crochet
                         and knitting.</p>
@@ -55,16 +56,16 @@
             </div>
         </div>
 
-        <div id="about-education">
+        <div class="section-3-boxes">
             <h2>Educational Background</h2>
-            <div id="about-education-list">
-                <div class="about-education-box">
+            <div class="section-3-boxes-list">
+                <div class="section-3-boxes-box">
                     <h3>My Current Program</h3>
                     <p>I am studying the Video Game Programming program at LaSalle College located in Montral. I learn
                         the
                         basics of the Unity and Unreal Engines, HTML, CSS and JavaScript, Java, C#, C++ and more.</p>
                 </div>
-                <div class="about-education-box">
+                <div class="section-3-boxes-box">
                     <h3>My Educational History</h3>
                     <p>I attended College Beaubois during my highschool years, where I have found my affinity for
                         programming, and where I learned the Basics programming language.</p>
@@ -73,7 +74,7 @@
                         using
                         Audacity, critical-thinking skills.</p>
                 </div>
-                <div class="about-education-box">
+                <div class="section-3-boxes-box">
                     <h3>Relevant Courses or Training</h3>
                     <p>I attended a StudioXP summer camp where I learned the basics of the Unity Engine and game design.
                     </p>
@@ -87,36 +88,38 @@
             </div>
         </div>
 
-        <div id="about-skills">
+        <div class="section-1-boxes">
             <h2>Technical Skills</h2>
-            <div id="about-skills-list">
-                <h3 class="about-skills-box">Some of my Technical Skills</h3>
-                <ul class="about-skills-box">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Web Design</li>
-                    <li>GitHub</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                </ul>
+            <div class="section-1-boxes-list">
+                <div class="section-1-boxes-box">
+                    <h3>Some of my Technical Skills</h3>
+                    <ul class="section-1-boxes-box-list">
+                        <li class="section-1-boxes-box-item">HTML</li>
+                        <li class="section-1-boxes-box-item">CSS</li>
+                        <li class="section-1-boxes-box-item">JavaScript</li>
+                        <li class="section-1-boxes-box-item">Responsive Web Design</li>
+                        <li class="section-1-boxes-box-item">GitHub</li>
+                        <li class="section-1-boxes-box-item">C#</li>
+                        <li class="section-1-boxes-box-item">C++</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div id="about-interests">
+        <div class="section-3-boxes">
             <h2>Personal Interests</h2>
-            <div id="about-interests-list">
-                <div class="about-interests-box">
+            <div class="section-3-boxes-list">
+                <div class="section-3-boxes-box">
                     <h3>My Hobbies</h3>
                     <p>I have taken up fiber arts, such as crochet and a bit of knitting. I enjoy making useful gifts
                         for my
                         loved ones.</p>
-                    <div id="about-interests-images">
+                    <div class="section-images">
                         <img src="#" alt="Crochet Dragon">
                         <img src="#" alt="Knit Scarf">
                     </div>
                 </div>
-                <div class="about-interests-box">
+                <div class="section-3-boxes-box">
                     <h3>My Technology Interests</h3>
                     <p>I have an interest in creating applications that are useful for my day-to-day life, such as
                         creating
@@ -129,7 +132,7 @@
                     <p>I also enjoy creating web applications, as I can pick the colours that are harmonious together,
                         working the artistic side of my brain.</p>
                 </div>
-                <div class="about-interests-box">
+                <div class="section-3-boxes-box">
                     <h3>My Professional Interests</h3>
                     <p>I have an interest in cybersecurity, as I have the ability to continously fix problems in code
                         while
@@ -140,15 +143,15 @@
             </div>
         </div>
 
-        <div id="about-goals">
+        <div class="section-3-boxes">
             <h2>Career Goals</h2>
-            <div id="about-goals-list">
-                <div class="about-goals-box">
+            <div class="section-3-boxes-list">
+                <div class="section-3-boxes-box">
                     <h3>The Type of Developper I want to Become</h3>
                     <p>I wish to become a developper who fixes and upgrades old code that is used in banks and in the
                         government.</p>
                 </div>
-                <div class="about-goals-box">
+                <div class="section-3-boxes-box">
                     <h3>The Skills I Wish to Develop</h3>
                     <p>I wish to learn Assembly to fully understand how a computer reads and compiles modern code.</p>
                     <p>While in my career, I wish to develop the project management skills as it's something my father
@@ -157,18 +160,18 @@
                     <p>Finally, I wish to learn some 'Joke Programming Languages', as learning them would improve my
                         confidence with new challenges.</p>
                 </div>
-                <div class="about-goals-box">
+                <div class="section-3-boxes-box">
                     <h3>My Future Professional Goals</h3>
                     <p>My professional goal is getting a cybersecurity job working for the governement or the police.
                     </p>
                 </div>
             </div>
         </div>
-        
+
 
         <div id="back-button">
-            <button>Back to Main Menu</button>
-        </div>        
+            <button id="back-to-index">Back to Main Menu</button>
+        </div>
     </main>
 </body>
 
