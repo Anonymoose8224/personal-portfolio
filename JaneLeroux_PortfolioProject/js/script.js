@@ -35,3 +35,11 @@ modeButton?.addEventListener('click', () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     
 })
+
+
+//MAKING NAV INVISIBLE AND VISIBLE
+const navButton = document.getElementById('nav-button');
+const mainNav = document.getElementById('main-nav');
+navButton?.addEventListener('click', () => {
+    mainNav.classList.toggle('hidden');
+});

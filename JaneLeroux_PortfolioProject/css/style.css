@@ -4,7 +4,7 @@ DEFINING COLORS
 :root {
     --bg-color: #e8d8de;
     --button-menu-bg: #ea958e;
-    --nav-panel-color: #efc8c8;
+    --nav-panel-color: #ea958e;
     --nav-text-color: #212e53;
     --nav-text-hover-color: #917e96;
     --menu-button-color: #212e53;
@@ -28,10 +28,10 @@ DEFINING COLORS
 body.dark-mode {
     --bg-color: #1b3a69;
     --button-menu-bg: #2a4b65;
-    --nav-panel-color: #93478a;
-    --nav-text-color: #f78169;
-    --nav-text-hover-color: #d3597e;
-    --menu-button-color: #d3597e;
+    --nav-panel-color: #2a4b65;
+    --nav-text-color: #dec1b6;
+    --nav-text-hover-color: #d49494;
+    --menu-button-color: #31747e;
     --button-bg-color: #6e5579;
     --button-text-color: #d49494;
     --button-hover-color: #9c6d83;
@@ -44,7 +44,7 @@ body.dark-mode {
     --title-header-color: #dec1b6;
     --title-text-color: #dec1b6;
     --section-header-bg: #2a4b65;
-    --section-header-text: #f3b8c0;
+    --section-header-text: #dec1b6;
     --section-box-bg: #31747e;
     --section-box-text: #dec1b6;
     --light-background: url(../images/DuskMountains.jpg)
@@ -54,7 +54,7 @@ body.dark-mode {
 
 *{
     font-family: 'Courier New', Courier, monospace;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 1s ease, color 1s ease, background-image 1s ease;
 }
 p {
     font-weight: bold;
@@ -90,7 +90,10 @@ body {
 
 
 #button-menu {
-    background-color: var(--button-bg-color);
+    position: fixed;
+    width: 100%;
+    background-color: var(--button-menu-bg);
+    z-index: 1001;
 }
 #button-menu button {
     background-color: transparent;
@@ -102,6 +105,17 @@ body {
 #main-nav {
     background-color: var(--nav-panel-color);
     padding: 30px;
+    top: 72px;
+    left: 0;
+    width: auto;
+    height: auto;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: transform 1s ease-in-out, background-color 1s ease, color 1s ease;
+}
+#main-nav.hidden {
+    transform: translateY(-100%);
 }
 #main-nav a {
     gap: 25px;
@@ -188,7 +202,7 @@ body {
 #title {
     background-color: var(--title-bg-color);
     text-align: center;
-    padding: 50px;
+    padding: 150px;
 }
 #title  h1{
     font-size: 40px;
