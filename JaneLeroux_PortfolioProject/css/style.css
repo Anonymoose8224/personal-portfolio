@@ -87,6 +87,15 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+i {
+    color: var(--section-box-text);
+}
+li a:hover i {
+    color: var(--section-header-bg);
+}
 
 
 #button-menu {
@@ -377,4 +386,15 @@ progress.progress-fill::-moz-progress-bar {
     background-color: var(--button-bg-color);
     border-radius: 8px;
     transition: inline-size 1s ease-out, background-color 1s ease, color 1s ease;
+}
+
+
+.section-1-boxes-box-list.social-icons {
+    gap: 20px;  
+}
+.social-icons .section-1-boxes-box-item {
+    flex: 0 1 auto; 
+}
+#email-personal {
+    text-decoration: underline;
 }
