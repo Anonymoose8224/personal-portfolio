@@ -346,3 +346,35 @@ body {
     flex: 1 1 calc(33.333% - 10px);
     box-sizing: border-box;
 }
+
+
+
+.progress-indicator {
+    width: 100%;
+    padding: 5px;
+}
+progress.progress-fill {
+    width: 95%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    transition: background-color 1s ease, color 1s ease;
+}
+progress.progress-fill::-webkit-progress-bar {
+    background-color: var(--bg-color);
+    transition: background-color 1s ease, color 1s ease;
+}
+progress.progress-fill::-webkit-progress-value {
+    background-color: var(--button-bg-color);
+    border-radius: 8px;
+    transition: inline-size 1s ease-out, background-color 1s ease, color 1s ease;
+}
+progress.progress-fill::-moz-progress-bar {
+    background-color: var(--button-bg-color);
+    border-radius: 8px;
+    transition: inline-size 1s ease-out, background-color 1s ease, color 1s ease;
+}

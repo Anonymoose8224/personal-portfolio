@@ -43,3 +43,22 @@ const mainNav = document.getElementById('main-nav');
 navButton?.addEventListener('click', () => {
     mainNav.classList.toggle('hidden');
 });
+
+
+//PROGRESS BARS FILLING UP FOR SKILLS
+document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = document.querySelectorAll("progress.progress-fill");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const bar = entry.target;
+            if (entry.isIntersecting) {
+                bar.value = bar.getAttribute("data-target");
+            } else {
+                bar.value = 0;
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+    progressBars.forEach(bar => observer.observe(bar));
+});
